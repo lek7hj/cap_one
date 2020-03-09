@@ -1,2 +1,2 @@
-web: gunicorn cap_one.wsgi
+web: gunicorn CapYelp.wsgi
 release: python manage.py migrate
