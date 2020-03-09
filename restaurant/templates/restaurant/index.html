@@ -13,58 +13,80 @@
 </head>
 
 <body>
-    <section>
 
-        {% block content %}
-        <br><br>
-        <div class="header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-            <h1 class="display-4"> Welcome to the schedule page!</h1>
-            <p class="lead">I don't know what I'm doing! </p>
+    {% block content %}
+    <br><br>
+    <div class="header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4"> Welcome to GetBytes!</h1>
+        <p class="lead"> Craving any of these foods? Click on the food to see if it's near you!</p>
+    </div>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="https://www.w3schools.com">
+                        <img class=center
+                            src="https://www.kingarthurflour.com/sites/default/files/styles/featured_image_2x/public/recipe_legacy/20-3-large.jpg?itok=1v5DoLeu"
+                            width="300" height="auto">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.w3schools.com">
+                        <img class=center src="https://www.nippon.com/en/ncommon/contents/japan-data/169591/169591.jpg"
+                            width="300" height="auto">
+                    </a>
+                </div>
+
+
+                <div class="col-md-4">
+                    <a href="https://www.w3schools.com">
+                        <img class=center src="https://t1.daumcdn.net/cfile/tistory/2124234F578D84911E" width="300"
+                            height="auto">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.w3schools.com">
+                        <img class=center
+                            src="https://www.fifteenspatulas.com/wp-content/uploads/2011/10/Caesar-Salad-Fifteen-Spatulas-3.jpg"
+                            width="300" height="auto">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.w3schools.com">
+                        <img class=center
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQWwRZmpJpJq2I9ShY6bxH_cHWCee8p4eINwUVVW-W7XAvmLpJb"
+                            width="300" height="auto">
+                    </a>
+                </div>
+
+
+                <div class="col-md-4">
+                    <a href="https://www.w3schools.com">
+                        <img class=center
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ_KWbyqJfJF28q3s9Ak3-Su2GMNrOlFA4q06MTOUVGKPwaE5i4"
+                            width="300" height="auto">
+                    </a>
+                </div>
+            </div>
         </div>
-
-        <table id="calendar">
-            <div class='data'>
-                <input type='text' id='year' placeholder='Enter Four Digit Year' />
-                <input type='text' id='month' placeholder='Enter Numeric Month' />
-                <input type='reset' id='reset' value='Clear Calendar' />
-                <input type='submit' id='create' value='Make Calendar' />
-            </div>
-            <thead>
-                <tr>
-                    <th id="dayOfWeek">Sunday</th>
-                    <th id="dayOfWeek">Monday</th>
-                    <th id="dayOfWeek">Tuesday</th>
-                    <th id="dayOfWeek">Wednesday</th>
-                    <th id="dayOfWeek">Thursday</th>
-                    <th id="dayOfWeek">Friday</th>
-                    <th id="dayOfWeek">Saturday</th>
-                </tr>
-            </thead>
-            <tbody id="cal"></tbody>
-        </table>
-        </div>
-        <form id="textpad">
-            <div class="form-group">
-                <textarea class="form-control" id="textbox" rows="15" placeholder="Take some notes"
-                    name="notes"></textarea>
-            </div>
-            <!-- <button type="submit" class="btn btn-primary">Save</button> -->
-        </form>
-
-        <!-- <footer class="footer mt-auto py-3">
-            <div class="container">
-                <span class="text-muted"> @stract 2020</span>
-            </div>
-        </footer> -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
+    </div>
+    <div>
+        <center>
+            <p>Still don't know what to eat? Take this quiz for inspiration!</p>
+            <a href=https://www.buzzfeed.com/norbertobriceno/we-will-tell-you-what-to-eat>find your food</a>
+        </center>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 {% endblock content %}
 
