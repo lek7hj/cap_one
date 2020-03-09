@@ -18,12 +18,17 @@ class MapView(generic.ListView):
     model = FoodPlace
 
 
-class AboutView(generic.ListView):
-    template_name = "restaurant/map.html"
+# class AboutView(generic.ListView):
+#     template_name = "restaurant/map2.html"
+#     model = FoodPlace
+
+
+class DateView(generic.ListView):
+    template_name = "restaurant/date.html"
     model = FoodPlace
 
 
-def get_current_location(request):
-    lat = POST.get("lat")
-    lon = POST.get("long")
+class RandomView(generic.ListView):
+    template_name = "restaurant/random.html"
+    model = FoodPlace
 
