@@ -1,4 +1,4 @@
-{% extends 'restaurant/base.html' %}
+{% extends 'restaurant/base3.html' %}
 
 {% load static %}
 <!DOCTYPE html>
@@ -17,11 +17,11 @@
 
         {% block content %}
         <div class="header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-            <h1 class="display-4">What's near you?</h1>
+            <h1 class="display-4">Where are you?</h1>
         </div>
 
 
-        <button id="find-me">Want to know your coordinates?</button><br />
+        <button id="find-me">Where are you located?</button><br />
         <p id="status"></p>
         <a id="map-link" target="_blank"></a>
         <script>function geoFindMe() {

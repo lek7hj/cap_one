@@ -14,7 +14,7 @@
 </head>
 
 <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: lavenderblush">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color:blue">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -22,16 +22,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/restaurant" style="color: rgb(116, 73, 139)"><b>Home</b></a>
+                    <a class="nav-link" href="/restaurant" style="color: yellow"><b>Home</b></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/restaurant/map" style="color: rgb(116, 73, 139)"><b>Map</b></a>
+                    <a class="nav-link" href="/restaurant/map" style="color: yellowgreen"><b>find</b></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/restaurant/date" style="color: rgb(116, 73, 139)"><b>Date</b></a>
+                    <a class="nav-link" href="/restaurant/date" style="color: yellow"><b>Buddy</b></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/restaurant/random" style="color: rgb(116, 73, 139)"><b>Random</b></a>
+                    <a class="nav-link" href="/restaurant/random" style="color: yellow"><b>Random</b></a>
                 </li>
             </ul>
         </div>
@@ -39,24 +39,26 @@
 
 </header>
 
-<body>
-    {% block content %}
-    {% endblock %}
+<body
+    style="background-image: url('https://previews.123rf.com/images/seralexvi/seralexvi1408/seralexvi140800153/30959012-healthy-food-word-background-fresh-fruits-and-vegetables.jpg')">
+</body>
+{% block content %}
+{% endblock %}
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
-    {% block script %}
-    {% endblock %}
+{% block script %}
+{% endblock %}
 </body>
 <footer>
     <a class="nav-link" href="/restaurant" style="color: black">
