@@ -9,4 +9,6 @@ urlpatterns = [
     # path("about/", views.IndexView.as_view(), name="about"),
     path("date/", views.DateView.as_view(), name="date"),
     path("random/", views.RandomView.as_view(), name="random"),
+    path("menu/", views.MenuView.as_view(), name="menu"),
+    path("available/", views.AvailableView.as_view(), name="menu"),
 ]

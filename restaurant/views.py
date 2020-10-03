@@ -17,10 +17,13 @@ class MapView(generic.ListView):
     template_name = "restaurant/map.html"
     model = FoodPlace
 
+class MenuView(generic.ListView):
+    template_name = "restaurant/menu.html"
+    model = FoodPlace
 
-# class AboutView(generic.ListView):
-#     template_name = "restaurant/map2.html"
-#     model = FoodPlace
+class AvailableView(generic.ListView):
+    template_name = "restaurant/have.html"
+    model = FoodPlace
 
 
 class DateView(generic.ListView):

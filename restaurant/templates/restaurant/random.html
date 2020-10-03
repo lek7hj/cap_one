@@ -13,86 +13,82 @@
 </head>
 
 <body>
-    <section>
 
-        {% block content %}
-        <br><br>
-        <div class="header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-            <h1 class="display-4">Still can't choose?</h1>
-            <p class="lead">Let us help! We'll recommend a food based on your past choices :) </p>
+    {% block content %}
+    <br><br>
+    <div class="header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Still can't choose?</h1>
+        <p class="lead">Let us help! We'll recommend a food based on your past choices :) </p>
+    </div>
+    <form>
+        <div class="form-group">
+            <label for="rating">How many stars should the food have at a minimum?</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
         </div>
-        <form>
-            <div class="form-group">
-                <label for="rating">How many stars should the food have at a minimum?</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
 
-            <div class="form-group">
-                <label for="exampleFormControlSelect2">Travel method?</label>
-                <select multiple class="form-control" id="exampleFormControlSelect2">
-                    <option>Metro</option>
-                    <option>Car</option>
-                    <option>Walking</option>
-                    <option>Other public transportation</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Maximum preparation time (time)</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"
-                    placeholder="minutes"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">How far away are you? (miles)</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="miles"></textarea>
+        <div class="form-group">
+            <label for="exampleFormControlSelect2">Travel method?</label>
+            <select multiple class="form-control" id="exampleFormControlSelect2">
+                <option>Metro</option>
+                <option>Car</option>
+                <option>Walking</option>
+                <option>Other public transportation</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Maximum preparation time (time)</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="minutes"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">How far away are you? (miles)</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="miles"></textarea>
 
-            </div>
-            <div class="form-group">
-                <label for="rating">Are you feeling adventurous?</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>YES</option>
-                    <option>yes?</option>
-                    <option>no?</option>
-                    <option>NO</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="rating">How would your rate your experience ordering food?</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <div>
-                <button class="btn btn-success">
-                    <a href="/restaurant">Done</a>
-                </button>
-            </div>
-            <button class="btn btn-success">Cancel</button>
-            <button type="submit" class="btn btn-danger">
-                <a href="https://forms.gle/tCj449APL7BPjTLs7">Submit</a>
+        </div>
+        <div class="form-group">
+            <label for="rating">Are you feeling adventurous?</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>YES</option>
+                <option>yes?</option>
+                <option>no?</option>
+                <option>NO</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="rating">How would your rate your experience ordering food?</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div>
+            <button class="btn btn-success" style="margin-bottom: 30cm">
+                <a href="/restaurant">Done</a>
             </button>
-        </form>
-
-
         </div>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
+        <button class="btn btn-success" href="https://forms.gle/tCj449APL7BPjTLs7">Cancel</button>
+        <a href="https://forms.gle/tCj449APL7BPjTLs7">Submit</a>
+    </form>
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 {% endblock content %}
 
